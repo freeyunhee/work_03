@@ -1,0 +1,109 @@
+body {
+    color: #101010;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.inner {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header .logo_area {width: 100%;padding: 20px;position: fixed;top: 0;left: 0;color:#fff;display: flex;justify-content: space-between;z-index: 10;transition: 0.3s;}
+
+header .logo_area.hide {top: -80px;}
+
+header .logo_area.show {color:#000;background: #fff;}
+
+header .logo_area .main_logo {width: 100px;height: 20px;background-image: url(../images/logo.png);background-size: contain;background-repeat: no-repeat;filter: invert(100%);}
+
+header .logo_area.show .main_logo {filter: invert(0%);}
+
+header .logo_area .main_logo a {display: block;height: 100%;}
+
+header .icon_menu {display:flex;width: 20px;height: 15px;justify-content: space-between;flex-direction:column;}
+
+header .icon_menu .burger {width: 20px;height: 2px;background: #fff;transition: 0.3s;}
+
+header .logo_area.show .burger {background: #000;}
+
+header .menu_area {position: fixed;top: 0;left: 0;z-index: 30;width: 100%;height: 100vh;background:#fff;color:#333333;font-family: "Hatton", sans-serif;font-size:18px;font-weight: 500;display: flex;align-items: center;visibility: hidden;opacity:0;transition: 0.5s}
+
+header .menu_area.on {visibility:visible;opacity:1;}
+
+header .menu_area .logo_area .menu_logo {width: 100px;height: 20px;background-image: url(../images/logo.png);background-size: contain;background-repeat: no-repeat;}
+
+header .menu_area .logo_area .icon_close {display:flex;width: 20px;height: 18px;justify-content: space-between;flex-direction:column;}
+
+header .menu_area .logo_area .icon_close .burger{background:#000;width: 20px;height: 2px;display: block;flex-shrink: 0;}
+
+header .menu_area .logo_area .icon_close .burger:nth-of-type(2){transform: translate(0,8px) rotate(45deg);}
+
+header .menu_area .logo_area .icon_close .burger:nth-of-type(3){visibility: hidden;}
+
+header .menu_area .logo_area .icon_close .burger:nth-of-type(4){transform: translate(0,-8px) rotate(-45deg);}
+
+header .menu_area .depth1 {font-size: 14px;}
+
+header .menu_area .depth1 > li  {margin-bottom: 16px;}
+
+header .menu_area .depth1 > li .lang_box {overflow: hidden;position: relative;}
+
+header .menu_area .depth1 > li .lang_box .depth1_title {opacity:0.5;position: relative;}
+
+header .menu_area .depth1 > li .lang_box .depth1_title:last-child::before {content: "";width: 1px;height: 16px;background: #000;opacity:0.5;position: absolute;top: 6px;left: -6px;} 
+
+header .menu_area .depth1 > li .lang_box .depth1_title.active {opacity:1;}
+
+header .menu_area .depth1 > li .lang_box h3 {float: left;margin-right: 10px;}
+
+header .menu_area .depth2 {padding-left: 30px;}
+
+header .menu_area .depth2 > li {margin-bottom: 8px;}
+
+header .menu_area .depth2 > li:last-child {margin-bottom: 0;}
+
+
+/* footer */
+
+footer {background: #f6f6f6;}
+
+.footer_top .txt_box {padding: 40px 20px;}
+
+.footer_top .title {text-align:left;margin-bottom: 150px;}
+
+.footer_top .img_box {width: 100vw;height: 100vw;}
+
+.footer_top .img_box img {width: 100%;height: 100%;object-fit: cover;}
+
+.footer_bottom .title {padding: 40px 0 0;}
+
+.footer_bottom address {padding: 40px 0;border-top: 1px solid rgba(0,0,0,0.3);font-family: "Hatton", sans-serif;font-size: 20px;font-weight: 400;text-align: center;}
+
+.footer_bottom .f_menu {padding: 40px 0;border-top: 1px solid rgba(0,0,0,0.3);text-align: center;}
+
+.footer_bottom .f_menu .depth1 > li {margin-bottom: 30px;}
+
+.footer_bottom .f_menu .depth1 > li:last-child {margin-bottom: 0;}
+
+.footer_bottom .f_menu .depth1_title {font-family: "Hatton", sans-serif;font-weight: 400;margin-bottom: 20px;}
+
+.footer_bottom .f_menu .depth2 > li {margin-bottom: 12px;}
+
+.copy_area {padding: 25px 0 40px;text-align: center;border-top: 1px solid rgba(0,0,0,0.3);font-weight: 400;font-family: "Hatton", sans-serif;}
+
+.copy_area .copy {margin-bottom: 15px;}
+
+.copy_area a {display: inline-block;margin-bottom: 15px;}
+
+.copy_area .maker a {font-weight: 500;position: relative;}
+
+.copy_area .maker a::after {content: "";width: 100%;height: 1px;background: #000;position: absolute;top: calc(100% + 2px);left: 0;}
+
+
+
