@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Hatton';
+    src: url(../fonts/Hatton-Ultralight.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Hatton';
+    src: url(./fonts/Hatton-Medium.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Hatton';
+    src: url(../fonts/Hatton-Semibold.otf);
+    font-weight: 500;
+}
+
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+h2.title {
+    font-family: "Hatton", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {font-family: "Hatton", sans-serif;font-size: 12px;font-weight: 500;position: relative;display: inline-block;}
+
+
+
+.btn::after {
+    content:" ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform-origin: 0% 100%;
+}
+
+.btn:hover::after {
+    animation-name: underline;
+    animation-iteration-count: 2;
+    animation-duration: 0.4s;
+}
+
+@keyframes underline {
+    from {
+      transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+  }
+
+.over_txt{display: block;overflow: hidden;}
+
+.over_txt > span{transform: translateY(100%);display: block;}
+
+
+
+
+
